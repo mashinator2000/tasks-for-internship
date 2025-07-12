@@ -1,15 +1,20 @@
 # Задание 3: report.json
 
 import json
+import sys
 
-file1, file2, file3 = [el for el in input().split()]
+file1 = sys.argv[1]
+file2 = sys.argv[2]
+file3 = sys.argv[3]
+
+# file1, file2, file3 = [el for el in input().split()]
 with open(file1, 'r') as file:
-    tests_structure = json.load(file)
+    values_list = json.load(file)
+values_list = values_list["values"]
 
 
 with open(file2, 'r') as file:
-    values_list = json.load(file)
-values_list = values_list["values"]
+    tests_structure = json.load(file)
 
 
 def update_test_values(tests_structure, values_list):
