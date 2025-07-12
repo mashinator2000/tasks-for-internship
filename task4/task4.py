@@ -1,6 +1,8 @@
 # Задание 4: приближение чисел к одному в массиве
+import sys
 
-file = input()
+file = sys.argv[1]
+# file = input()
 
 array = []
 
