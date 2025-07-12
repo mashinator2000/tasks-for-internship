@@ -1,6 +1,20 @@
 # Задание 1: круговой массив.
 
-n, m = [int(el) for el in input().split()]
+# import argparse
+# parser = argparse.ArgumentParser()
+# parser.add_argument('n')
+# parser.add_argument('m')
+# args = parser.parse_args()
+
+# n = int(args.n)
+# m = int(args.m)
+
+import sys
+
+n = int(sys.argv[1])
+m = int(sys.argv[2])
+
+# n, m = [int(el) for el in input().split()]
 
 array = [i for i in range(1, n + 1)]
 result = [str(1)]
