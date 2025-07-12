@@ -1,6 +1,11 @@
 # Задание 2: окружность и точки
 
-file1, file2 = [el for el in input().split()]
+import sys
+
+file1 = sys.argv[1]
+file2 = sys.argv[2]
+
+# file1, file2 = [el for el in input().split()]
 
 with open(file1, 'r') as file:
     center = [int(el) for el in file.readline().split()]
